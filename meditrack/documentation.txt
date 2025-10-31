@@ -16,5 +16,11 @@
             import patients.signals -> now this, lets django loads our signals when the app starts
 
 
+3. We are now creating a middleware - Why do we need a middleware, - We are creating a custom middleware in order to track all the endpoints, we do this because we want to see
+-the perfoimance of our programme, if all the endpoints are being hit and which one is having traffic - later on we will use logging intead of print()
+
+
+
+
 
 

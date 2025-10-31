@@ -32,3 +32,11 @@
 6. We now added templates. Home.html, patients.html, appointment.html
 
 
+7. Do optimize our querries, we are interractovely looking at python manage.py shell:
+we are looking to understand what select_related() does,a nd we found out that it avoid n + 1 querry issue for one to many or one to one relationships in database amking out querry faster
+We also looked at prefetch_related() and for this it deals with many to many relationships, it joins the result in python memory, not in databse, making our querries more faster
+
+
+
+
+

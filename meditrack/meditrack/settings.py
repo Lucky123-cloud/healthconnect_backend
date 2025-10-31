@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'patients',
 ]
 
 MIDDLEWARE = [
@@ -47,7 +48,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
+    'patients.middleware.RequestLogMiddleware', #custom middleware for logging requests
+] 
 
 ROOT_URLCONF = 'meditrack.urls'
 

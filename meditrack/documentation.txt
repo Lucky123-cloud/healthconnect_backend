@@ -1,0 +1,20 @@
+1. We started by created a model for the project:
+
+- A model for Patient
+- A model for Doctor
+- A model for Appointment
+
+
+- We registered them in database using python manage.py migrate
+
+
+2. We are now creating the signals, signals allow us to react to something when something happens, mostly in Django like notifications, email sent etc
+- For this signals will help us to knwo if a record or an appointment is created
+- We are only doing this to a newly created appointment, so the trigger here is any appointment in database created
+- onnce all this is done, we have to register the signals  our app.py by saying 
+   def ready(self):
+            import patients.signals -> now this, lets django loads our signals when the app starts
+
+
+
+

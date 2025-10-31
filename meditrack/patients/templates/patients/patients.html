@@ -1,0 +1,7 @@
+<h2>Registered Patients</h2>
+<ul>
+{% for patient in patients %}
+  <li>{{ patient.name }} ({{ patient.age }} yrs)</li>
+{% endfor %}
+</ul>
+<a href="/">Back</a>

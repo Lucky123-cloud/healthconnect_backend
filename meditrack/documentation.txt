@@ -21,6 +21,14 @@
 
 
 
+4. We added the urls to patients app, the urls for patients, and to appointment, and registered them to meditrack project as patients.urls
 
+
+5. Now are creating Views, this will teach us Django's Request/Response lifecycle
+
+
+
+
+6. We now added templates. Home.html, patients.html, appointment.html
 
 
